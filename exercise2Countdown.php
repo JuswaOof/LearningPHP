@@ -21,17 +21,27 @@ $number = 0;
 
 if(isset($_POST["submit"])){
  $number = $_POST["number"];
- echo gettype($number);
- if (is_int($number)) {
-    // This block of code will be executed if $number is an integer.
+
+ $integerValue = intval($number);
+
+if ($integerValue !== 0 || $integerValue === 0 && $number === "0") {
     while($number >=0 ){
     echo $number . "<br>";
     $number--;
-}
+   }
 } else {
-    // This block of code will be executed if $number is not an integer.
     echo "please enter number only";
 }
+//  if (is_int($number)) {
+//     // This block of code will be executed if $variable is an integer.
+//     while($number >=0 ){
+//     echo $number . "<br>";
+//     $number--;
+// }
+// } else {
+//     // This block of code will be executed if $variable is not an integer.
+//     echo "please enter number only";
+// }
 
 }
 ?>
