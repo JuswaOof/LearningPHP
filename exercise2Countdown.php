@@ -9,17 +9,29 @@
 <form action="countdown.php" method="POST">
 <label for="">Countdown from:</label>
 <input type="text" name="number">
-<input type="submit" value="start">
+<input type="submit" name="submit" value="start">
 </form>
 <br>
 </body>
 </html>
 
 <?php
-$number = $_POST["number"];
 
-while($number >=0 ){
- echo $number . "<br>";
- $number--;
+$number = 0;
+
+if(isset($_POST["submit"])){
+ $number = $_POST["number"];
+ echo gettype($number);
+ if (is_int($number)) {
+    // This block of code will be executed if $variable is an integer.
+    while($number >=0 ){
+    echo $number . "<br>";
+    $number--;
+}
+} else {
+    // This block of code will be executed if $variable is not an integer.
+    echo "please enter number only";
+}
+
 }
 ?>
