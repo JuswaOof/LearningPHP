@@ -6,6 +6,8 @@
  <title>Document</title>
 </head>
 <body>
+  <h1>Count numbers down</h1>
+  <hr>
 <form action="countdown.php" method="POST">
 <label for="">Countdown from:</label>
 <input type="text" name="number">
