@@ -8,7 +8,7 @@
 <body>
  <h1>Count number</h1>
  <hr>
-<form action="countUp.php" method="POST">
+<form action="exercise3CountUp.php" method="POST">
 <label for="">Count up to:</label>
 <input type="text" name="number">
 <input type="submit" name="submit" value="start">
