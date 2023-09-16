@@ -8,7 +8,7 @@
 <body>
   <h1>Count numbers down</h1>
   <hr>
-<form action="countdown.php" method="POST">
+<form action="exercise2Countdown.php" method="POST">
 <label for="">Countdown from:</label>
 <input type="text" name="number">
 <input type="submit" name="submit" value="start">
