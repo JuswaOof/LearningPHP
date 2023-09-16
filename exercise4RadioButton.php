@@ -8,7 +8,7 @@
 <body>
   <h1>Radio Button</h1>
   <hr>
-<form action="radioButton.php" method="POST">
+<form action="exercise4RadioButton.php" method="POST">
   <label for="">Please choose one option</label><br><br>
  <input type="radio" name="credit_card" value="visa">Visa
  <br>
