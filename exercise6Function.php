@@ -7,7 +7,8 @@
 </head>
 <body>
  <h1>Get the hypotenuse given 2 sides</h1>
-<form action="exercise6Function.php" method="POST">
+ <hr>
+<form action="function.php" method="POST">
  <label for="">Please input side a:</label>
  <input type="text" name="sideA"><br>
  <label for="">Please input side b:</label>
@@ -20,10 +21,32 @@
 function getHypotenuse($a,$b){
  return sqrt($a**2 + $b **2);
 }
+
+
+
+
+// if(isset($_POST["Calculate"])){
+
+//  if(empty($_POST["sideA"]) && empty($_POST["sideB"])){
+//   echo "Please enter side A and side B";
+//  }elseif(empty($_POST["sideA"])){
+//   echo "Please enter side A";
+//  }elseif(empty($_POST["sideB"])){
+//   echo "Please enter side B";
+//  }else{
+// echo "the hypotenuse is:" . getHypotenuse($a,$b);
+// }
+// }
+
+if(isset($_POST["Calculate"])){
 $a = $_POST["sideA"];
 $b = $_POST["sideB"];
 
-if(isset($_POST["Calculate"])){
+ $integerValueOne = intval($a);
+ $integerValueTwo = intval($b);
+
+if ($integerValueOne !== 0 || $integerValueOne === 0 && $integerValueOne === "0"  && $integerValueTwo !== 0 || $integerValueTwo === 0 && $integerValueTwo === "0" ) {
+    if(isset($_POST["Calculate"])){
 
  if(empty($_POST["sideA"]) && empty($_POST["sideB"])){
   echo "Please enter side A and side B";
@@ -35,4 +58,9 @@ if(isset($_POST["Calculate"])){
 echo "the hypotenuse is:" . getHypotenuse($a,$b);
 }
 }
+} else {
+    echo "please enter number only";
+}
+}
+
 ?>
