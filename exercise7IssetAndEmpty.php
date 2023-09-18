@@ -17,7 +17,7 @@
   <input type="text" name="password">
   <br><br>
   <input type="submit" name="login" value="login">
-
+<br><br>
  </form>
 </body>
 </html>
@@ -43,7 +43,7 @@ if(isset($_POST["login"])){
   echo "please input password";
  }
  else{
-  echo "hello {$username}";
+  echo "Your username is '{$username}' and your password is '{$password}''";
  }
 }
 }
