@@ -16,7 +16,7 @@
   <label for="">password:</label>
   <input type="text" name="password">
   <br><br>
-  <input type="submit" name="login" value="login">
+  <input type="submit" name="check" value="check">
 <br><br>
  </form>
 </body>
@@ -28,7 +28,7 @@
 //  echo "{$key} = {$value} <br>";
 // }
 
-if(isset($_POST["login"])){
+if(isset($_POST["check"])){
 
  $username = $_POST["username"];
  $password = $_POST["password"];
