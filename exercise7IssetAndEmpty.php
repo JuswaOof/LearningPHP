@@ -6,6 +6,8 @@
  <title>Document</title>
 </head>
 <body>
+ <h1>Isset and Empty</h1>
+ <hr>
  <form action="issetAndEmpty.php" method="POST">
   <label for="">username:</label>
   <input type="text" name="username">
