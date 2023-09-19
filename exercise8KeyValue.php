@@ -6,16 +6,20 @@
  <title>Document</title>
 </head>
 <body>
-<form action="exercise8KeyValue.php" method="POST">
+ <h1>Key Value Pair</h1>
+ <hr><br>
+ <p>USA, JAPAN, INDIA, PHILIPPINES</p>
+<form action="keyValue.php" method="POST">
 <label for="">Please enter a country</label>
 <input type="text" name="search">
-<input type="submit" value="Find Capital">
+<input type="submit" value="Find Capital" name="submit">
 </form>
 <br>
 </body>
 </html>
 
 <?php
+if(isset($_POST["submit"])){
 $country = array("USA"=>"WASHINGTON D.C",
                  "JAPAN"=>"KYOTO",
                  "INDIA"=>"NEW DELHI",
@@ -24,5 +28,6 @@ $country = array("USA"=>"WASHINGTON D.C",
 $capital = $country[$_POST["search"]];
 
 echo $capital;
+}
 
 ?>
