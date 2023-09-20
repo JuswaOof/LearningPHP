@@ -7,14 +7,16 @@
 </head>
 <body>
  <h1>Validate</h1>
-<form action="validate.php" method="POST">
+ <hr>
+<form action="exercise9Validate.php" method="POST">
  <label for="">username:</label><br>
  <input type="text" name="username"><br>
  <label for="">age:</label><br>
  <input type="text" name="age"><br>
  <label for="">email:</label><br>
- <input type="text" name="email"><br>
+ <input type="text" name="email"><br><br>
  <input type="submit" name="submit" value="submit" >
+ <br><br>
 </form>
 </body>
 </html>
